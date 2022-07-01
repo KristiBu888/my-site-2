@@ -1,0 +1,509 @@
+*
+    margin: 0
+    padding: 0
+
+@import "vars"
+@import "mixins"
+
+body
+    font-family: 'Lato'
+    font-style: normal
+
+div
+    display: block
+
+.header
+    background: #222222
+
+.container
+    max-width: $site-width
+    margin: 0 auto
+
+.content
+    padding: 3% 2% 0%
+
+.menu
+    padding-top: 27px
+
+    display: flex
+    justify-content: space-between
+
+.svg
+    padding-right: 36px
+
+.svg-top
+    margin-top: -2px
+
+.one
+    padding-left: 36px
+
+.indent
+    padding-top: 6px
+
+.svg-big:hover
+    transform: scale(1.4)
+    transition: transform .2s
+
+.menu__left
+    list-style-type: none
+    display: flex
+
+.menu__right
+    list-style-type: none
+    display: flex
+
+.menu-list
+    position: relative
+    padding-bottom: 20px
+
+    &:hover .mega-box
+        display: block
+
+.mega-box
+    background-color: #fff
+    padding: 35px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    position: absolute
+    right: -131px
+    top: 63px
+    display: none
+    z-index: 1
+    height: 695px
+    width: 230px
+
+.mega
+    display: block
+    text-decoration: none
+    @include txt (400, 14px, 17px)
+
+    &-bigheading
+        @include txt (700, 14px, 17px)
+        color: #000000
+        margin-bottom: 15px
+
+    &-heading
+        color: $site-color
+        margin-bottom: 12px
+
+    &-link
+        color: #6F6E6E
+        margin-bottom: 10px
+        margin-left: 20px
+
+    &-link:hover
+        color: $site-color
+
+        .path-block
+            background: #F8F3F4
+
+.path-block
+    background: #F8F3F4
+
+.path-flex
+    display: flex
+    justify-content: space-between
+
+.open
+    margin: 60px 36px
+
+    &-text
+        @include txt (400, 24px, 29px)
+        color: $site-color
+        text-decoration: none
+
+.cart
+    display: flex
+    justify-content: space-between
+    padding-top: 96px
+    padding-bottom: 129px
+
+.cart-delivery
+    width: 360px
+
+.delivery-header
+    @include txt (300, 16px, 19px)
+    color: #222222
+
+.inptext-grey
+    @include txt (300, 13px, 16px)
+    color: #B1B1B1
+
+.border
+    border: 1px solid #A4A4A4
+    width: 330px
+    height: 45px
+    padding: 0px 16px
+    margin: 20px 0px
+
+.buttons
+    display: flex
+    justify-content: space-between
+    width: 652px
+
+.send
+    padding: 16px 40px
+    background: #FFFFFF
+    @include txt (300, 14px, 17px)
+    color: #000000
+    margin-top: 72px
+    border: 1px solid #A4A4A4
+
+    &:hover
+        box-shadow: -2px -2px 9px rgba(0, 0, 0, 0.3)
+        cursor: pointer
+
+.send1
+    padding: 16px 40px
+    background: #FFFFFF
+    @include txt (300, 14px, 17px)
+    color: #000000
+    margin-top: 24px
+
+    &:hover
+        box-shadow: -3px -3px 9px rgba(0, 0, 0, 0.3)
+        cursor: pointer
+
+.cart-items
+    display: flex
+    flex-wrap: wrap
+    margin-right: 128px
+
+.cart-items-block
+    box-shadow: 20px 15px 25px rgba(0, 0, 0, 0.14)
+    width: 652px
+    height: 306px
+    position: relative
+
+.cart-item-info
+    float: right
+    padding: 22px 170px 0px 32px
+
+.delite
+    border: none
+    outline: none
+    background-color: white
+    position: absolute
+    right: 21px
+
+.cart-item-1
+    margin-bottom: 40px
+
+.cart-item-bigtext
+    margin-bottom: 36px
+    @include txt (400, 24px, 29px)
+    color: #222222
+
+.cart-item-text
+    margin-top: 6px
+    @include txt (400, 22px, 26px)
+    color: #575757
+
+.cart-item-text span
+    color: $site-color
+
+.number
+    width: 44px
+    height: 24px
+    margin-left: 24px
+    @include txt (400, 18px, 22px)
+    color: #656565
+    text-align: center
+
+.cart-delivery-bottom
+    background: #F5F3F3
+    margin-top: 57px
+    padding-top: 39px
+    @include txt (400, 11px, 13px)
+    color: #4A4A4A
+    height: 215px
+
+.cart-delivery-bottom span
+    color: $site-color
+
+.checkout
+    margin-bottom: 12px
+    text-align: right
+    padding-right: 35px
+
+.cart-delivery-button
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.checkout-big
+    @include txt (300, 16px, 19px)
+
+hr
+    margin-top: 10px
+    margin-bottom: 17px
+    width: 275px
+    background: #E2E2E2
+
+.send2
+    width: 273px
+    height: 60px
+    background: $site-color
+    @include txt (300, 16px, 19px)
+    color: #FFFFFF
+    margin-bottom: 42px
+
+    &:hover
+        transform: scale(1.1)
+        transition: transform .2s
+        cursor: pointer
+
+.footer
+    background: #222224
+
+.bottom-img
+    background-image: url(../img/background-bottom.jpg)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    height: 450px
+
+.bottom-minibox
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+.bottom-minibox_1
+    padding-top: 87px
+    width: 360px
+    margin-left: 1px
+
+.comment
+    text-align: center
+
+.footer-bottom
+    @include txt (700, 24px, 40px)
+    text-align: center
+    color: #222224
+
+    &-text
+        @include txt (400, 18px, 30px)
+        text-align: center
+        color: #222224
+
+.bottom-minibox_2
+    padding-top: 120px
+    width: 360px
+    margin-right: 10%
+
+.footer-copyright
+    display: flex
+    justify-content: space-between
+
+.footer-subscribe
+    background: #E1E1E1
+    width: 323px
+    height: 50px
+    position: relative
+    border-radius: 25px 0px 0px 25px
+    margin-top: 30px
+
+.inptex
+    position: absolute
+    display: flex
+    align-items: center
+    @include txt (400, 14px, 17px)
+    color: #222224
+    opacity: 0.67
+    background: #E1E1E1
+    top: 11%
+    left: 4%
+    width: 170px
+    height: 36px
+    border: none
+    outline: none
+
+.footer-button
+    position: absolute
+    display: flex
+    justify-content: center
+    width: 55px
+    @include txt (400, 16px, 19px)
+    color: #fff
+    padding: 15px 39px
+    text-decoration: none
+    margin-top: 49px
+    margin-bottom: 96px
+    top: -98%
+    left: 66%
+    border-radius: 0px 25px 25px 0px
+    background: $site-color
+
+    &:hover
+        background: #E05C6E
+
+.copyright
+    width: max-content
+    @include txt (400, 16px, 19px)
+    color: #FBFBFB
+    padding-top: 30px
+    padding-bottom: 30px
+
+.fafa
+    width: max-content
+    padding: 24px
+    display: flex
+    justify-content: flex-end
+
+.fa
+    margin-right: 7px
+
+    &c
+        margin-right: 7px
+
+    &:hover
+        background: $site-color
+        cursor: pointer
+
+    &c:hover
+        color: $site-color
+        cursor: pointer
+
+    &-facebook-f
+        height: 24px
+        background-color: #FFFFFF
+        width: 32px
+        text-align: center
+        font-size: 22px
+        padding-top: 4px
+        margin-top: 2px
+
+    &-instagram-square
+        color: #FFFFFF
+        font-size: 32px
+
+    &-pinterest-p
+        height: 24px
+        background-color: #FFFFFF
+        width: 32px
+        text-align: center
+        font-size: 22px
+        padding-top: 4px
+        margin-top: 2px
+
+    &-twitter-square
+        font-size: 32px
+        color: #FFFFFF
+
+@media (max-width: 1135px)
+
+    .item-sec
+        margin-top: 45px
+
+    .cart
+        flex-wrap: wrap
+
+    .cart-delivery
+        display: flex
+        justify-content: space-around
+        width: 100%
+        margin-top: 65px
+
+    .delivery-header
+        padding-top: 20px
+
+    .cart-delivery-button
+        display: block
+        padding: 0 55px
+    .button
+        margin-bottom: 65px
+
+    .footer-box
+        display: block
+        padding: 50px 0px 65px
+
+    .footer-padding1
+        margin-bottom: 30px
+
+    .footer-padding2
+        margin-bottom: 15px
+
+    .footer-padding3
+        margin-bottom: 50px
+
+    .bottom-img
+        height: 760px
+
+    .bottom-minibox
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .bottom-minibox_1
+        padding-top: 87px
+        width: 360px
+        margin-left: 1px
+
+    .bottom-minibox_2
+        padding-top: 50px
+        margin-right: 0%
+
+@media (max-width: 768px)
+
+    .path-flex
+        justify-content: center
+
+    .cart-items
+        margin-right: 0px
+        justify-content: center
+        min-width: 360px
+
+    .cart-items-block
+        height: 190px
+
+    .cart-item-info
+        padding: 16px 60px 13px 10px
+
+    .cart-item-delite
+        width: 10px
+
+    .cart-item-bigtext
+        margin-bottom: 20px
+        font-size: 16px
+        line-height: 19px
+
+    .cart-item-text
+        margin-top: 4px
+        font-size: 14px
+        line-height: 17px
+
+    .number
+        width: 25px
+        height: 15px
+        font-size: 10px
+        line-height: 12px
+
+    .send
+        width: 175px
+        padding: 16px 20px
+        font-weight: 400
+        font-size: 12px
+        line-height: 14px
+
+    .cart-item-img
+        height: 190px
+
+    .cart-delivery
+        flex-direction: column
+        align-items: center
+
+@media (max-width: 375px)
+
+    .phone-none
+        display: none
+
+    .button
+        margin-bottom: 96px
+
+    .bottom-img
+        height: 609px
+
+    .footer-copyright
+        flex-wrap: wrap
+        flex-direction: column-reverse
+        align-items: center
+        padding-top: 20px

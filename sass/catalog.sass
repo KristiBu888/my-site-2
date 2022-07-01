@@ -1,0 +1,554 @@
+*
+    margin: 0
+    padding: 0
+
+@import "vars"
+@import "mixins"
+
+body
+    font-family: "Lato"
+    font-style: normal
+
+div
+    display: block
+
+.header
+    background: #222222
+
+.container
+    max-width: $site-width
+    margin: 0 auto
+
+.menu
+    padding-top: 27px
+    display: flex
+    justify-content: space-between
+
+.svg
+    padding-right: 36px
+
+.svg-top
+    margin-top: -2px
+
+.one
+    padding-left: 36px
+
+.indent
+    padding-top: 6px
+
+.svg-big:hover
+    transform: scale(1.4)
+    transition: transform .2s
+
+.menu__left
+    list-style-type: none
+    display: flex
+
+.menu__right
+    list-style-type: none
+    display: flex
+
+.icon-big:hover
+    transform: scale(1.3)
+    transition: transform .2s
+
+.menu-list
+    position: relative
+    padding-bottom: 20px
+
+    &:hover .mega-box
+        display: block
+
+.mega-box
+    background-color: #fff
+    padding: 35px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    position: absolute
+    right: -131px
+    top: 63px
+    display: none
+    z-index: 1
+    height: 695px
+    width: 230px
+
+.mega
+    display: block
+    text-decoration: none
+    @include txt (400, 14px, 17px)
+
+    &-bigheading
+        @include txt (700, 14px, 17px)
+        color: #000000
+        margin-bottom: 15px
+
+    &-heading
+        color: $site-color
+        margin-bottom: 12px
+
+    &-link
+        color: #6F6E6E
+        margin-bottom: 10px
+        margin-left: 20px
+
+    &-link:hover
+        color: $site-color
+
+.pages-block
+    display: flex
+    justify-content: center
+
+.pages
+    display: flex
+    justify-content: center
+    border: 1px solid #EBEBEB
+    width: 283px
+
+.numbers
+    margin: 13px
+    display: flex
+    justify-content: space-between
+    width: 203px
+
+.number
+    @include txt (300, 16px, 19px)
+    color: #5D5D5D
+    text-decoration: none
+    display: block
+
+    &:hover
+        color: $site-color
+
+.pages-left-right
+    margin-top: 13px
+
+.flex
+    display: flex
+    padding-top: 50px
+
+.filter
+    @include txt (600, 14px, 17px)
+    color: #000000
+    position: relative
+    width: 80px
+    margin-left: 15px
+
+    &-svg
+        margin-left: 10px
+
+    &:hover .hidden-filter
+        display: block
+
+.hidden-filter
+    @include txt (600, 14px, 17px)
+    color: $site-color
+    background-color: #fff
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    position: absolute
+    top: -17px
+    display: none
+    z-index: 1
+    min-height: 520px
+    width: 343px
+    padding: 17px
+    left: -17px
+
+summary
+    list-style-type: none
+
+.filter-txt
+    @include txt (400, 14px, 17px)
+    color: #6F6E6E
+    margin: 15px
+    padding-right: 10px
+
+    &:hover
+        color: $site-color
+
+.filter-subtxt
+    font-weight: 400
+    color: #6F6E6E
+    display: block
+    text-decoration: none
+    padding: 10px 17px
+
+.cursor:hover
+    cursor: pointer
+
+hr
+    border: 1px solid #EBEBEB
+    margin-bottom: 19px
+
+.category
+    display: flex
+    justify-content: center
+    width: 100%
+    @include txt (400, 14px, 17px)
+    color: #6F6E6E
+
+    &-block
+        position: relative
+        cursor: pointer
+
+.inptex-2
+    display: block
+    border: 1px solid #356EAD
+    box-sizing: border-box
+    border-radius: 10px
+    opacity: 0.4
+
+.subblock
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 9px
+
+    &-big
+        display: none
+        z-index: 1
+        position: absolute
+        min-width: 70px
+        left: -10px
+
+.left
+    left: 0px
+    width: 135px
+
+.category-block:hover .subblock-big
+    display: block
+
+.category-svg
+    padding: 0px 28px 0px 10px
+
+.invisible
+    height: 5px
+
+.path-block
+    background: #F8F3F4
+
+.path-flex
+    display: flex
+    justify-content: space-between
+
+.open
+    margin: 60px 36px
+
+    &-text
+        @include txt (400, 24px, 29px)
+        color: $site-color
+        text-decoration: none
+
+.path
+    display: flex
+    justify-content: flex-end
+    margin: 65px 36px
+
+    &-link
+        @include txt (300, 14px, 17px)
+        color: #636363
+        text-decoration: none
+
+    &-link:last-of-type
+        color: $site-color
+
+    &-link:hover
+        color: $site-color
+
+.p
+    @include txt (300, 14px, 17px)
+    color: #636363
+
+.content
+    padding: 3% 2% 0%
+
+.item-flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 50px
+
+.item-link
+    display: block
+    height: 580px
+
+.item
+    position: relative
+    background: #F8F8F8
+    margin-top: 30px
+    height: 581px
+
+.txt-box
+    position: absolute
+    margin: 25px 29px 20px 18px
+
+.item-sec
+    margin-top: 65px
+    margin-bottom: 128px
+
+.item-heading
+    text-align: center
+    @include txt (400, 30px, 36px)
+    color: #222222
+
+.item-desc
+    text-align: center
+    @include txt (400, 14px, 17px)
+    color: #9F9F9F
+
+.item-text
+    @include txt (400, 13px, 16px)
+    color: #000000
+    margin-bottom: 13px
+
+.item-subtext
+    @include txt (300, 14px, 17px)
+    color: #5D5D5D
+    margin-bottom: 18px
+
+.item-price
+    @include txt (400, 16px, 19px)
+    color: $site-color
+
+.item:hover .item-pic
+    filter: brightness(30%)
+
+.add-box
+    position: absolute
+    top: 32%
+    right: 32%
+    pointer-events: none
+    display: none
+    box-shadow: 0 0 10px 0px white
+
+    .item:hover &
+        display: flex
+        justify-content: center
+
+.add:hover
+    box-shadow: 0 0 10px 0px white
+
+.add
+    display: flex
+    text-decoration: none
+    border: 1px solid #fff
+    padding: 8px
+    justify-content: center
+    align-items: center
+
+.card
+    margin-right: 12px
+
+.add-desc
+    @include txt (400, 14px, 17px)
+    color: #FFFFFF
+
+.footer
+    background: #222224
+
+    &-box
+        display: flex
+        justify-content: space-between
+        padding: 104px 0px
+
+    &-minibox
+        text-align: center
+        color: #FBFBFB
+
+    &-heading
+        @include txt (400, 20px, 24px)
+
+    &-paragraph
+        @include txt (400, 14px, 17px)
+
+.bottom-img
+    background-image: url(../img/background-bottom.jpg)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    height: 450px
+
+.bottom-minibox
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+.bottom-minibox_1
+    padding-top: 87px
+    width: 360px
+    margin-left: 1px
+
+.comment
+    text-align: center
+
+.footer-bottom
+    @include txt (700, 24px, 40px)
+    text-align: center
+    color: #222224
+
+    &-text
+        @include txt (400, 18px, 30px)
+        text-align: center
+        color: #222224
+
+.bottom-minibox_2
+    padding-top: 120px
+    width: 360px
+    margin-right: 10%
+
+.footer-copyright
+    display: flex
+    justify-content: space-between
+
+.footer-subscribe
+    background: #E1E1E1
+    width: 323px
+    height: 50px
+    position: relative
+    border-radius: 25px 0px 0px 25px
+    margin-top: 30px
+
+.inptex
+    position: absolute
+    display: flex
+    align-items: center
+    @include txt (400, 14px, 17px)
+    color: #222224
+    opacity: 0.67
+    background: #E1E1E1
+    top: 11%
+    left: 4%
+    width: 170px
+    height: 36px
+    border: none
+    outline: none
+
+.footer-button
+    position: absolute
+    display: flex
+    justify-content: center
+    width: 55px
+    @include txt (400, 16px, 19px)
+    color: #fff
+    padding: 15px 39px
+    text-decoration: none
+    margin-top: 49px
+    margin-bottom: 96px
+    top: -98%
+    left: 66%
+    border-radius: 0px 25px 25px 0px
+    background: $site-color
+
+    &:hover
+        background: #E05C6E
+
+.copyright
+    width: -webkit-max-content
+    width: -moz-max-content
+    width: max-content
+    @include txt (400, 16px, 19px)
+    color: #FBFBFB
+    padding-top: 30px
+    padding-bottom: 30px
+
+.fafa
+    width: -webkit-max-content
+    width: -moz-max-content
+    width: max-content
+    padding: 24px
+    display: flex
+    justify-content: flex-end
+
+.fa
+    margin-right: 7px
+
+    &c
+        margin-right: 7px
+
+    &:hover
+        background: $site-color
+        cursor: pointer
+
+    &c:hover
+        color: $site-color
+        cursor: pointer
+
+    &-facebook-f
+        height: 24px
+        background-color: #FFFFFF
+        width: 32px
+        text-align: center
+        font-size: 22px
+        padding-top: 4px
+        margin-top: 2px
+
+    &-instagram-square
+        color: #FFFFFF
+        font-size: 32px
+
+    &-pinterest-p
+        height: 24px
+        background-color: #FFFFFF
+        width: 32px
+        text-align: center
+        font-size: 22px
+        padding-top: 4px
+        margin-top: 2px
+
+    &-twitter-square
+        font-size: 32px
+        color: #FFFFFF
+
+@media (max-width: 1135px)
+
+    .item-sec
+        margin-top: 45px
+
+    .button
+        margin-bottom: 65px
+
+    .footer-box
+        display: block
+        padding: 50px 0px 65px
+
+    .footer-padding1
+        margin-bottom: 30px
+
+    .footer-padding2
+        margin-bottom: 15px
+
+    .footer-padding3
+        margin-bottom: 50px
+
+    .bottom-img
+        height: 760px
+
+    .bottom-minibox
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .bottom-minibox_1
+        padding-top: 87px
+        width: 360px
+        margin-left: 1px
+
+    .bottom-minibox_2
+        padding-top: 50px
+        margin-right: 0%
+
+@media (max-width: 375px)
+
+    .phone-none
+        display: none
+
+    .button
+        margin-bottom: 96px
+
+    .bottom-img
+        height: 609px
+
+    .footer-copyright
+        flex-wrap: wrap
+        flex-direction: column-reverse
+        align-items: center
+        padding-top: 20px
+
+/*# sourceMappingURL=catalog.css.map */
